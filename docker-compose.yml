@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ecotrip_app:
+    build:
+      context: .
+    restart: always
+    ports:
+      - 8000:8501  # Remplacez 8000 par le numéro de port souhaité
+    volumes:
+      - ./data:/data
+    networks:
+      - ecotrip
+
+networks:
+  ecotrip:
+    driver: bridge
