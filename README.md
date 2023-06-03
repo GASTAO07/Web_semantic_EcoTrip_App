@@ -33,6 +33,8 @@ Avant d'installer EcoTrip, assurez-vous d'avoir les prérequis suivants install�
    $ pip install -r requirements.txt
    ```
 
+   pip install Pillow
+
    Les dépendances suivantes seront installées :
    
    - rdflib
